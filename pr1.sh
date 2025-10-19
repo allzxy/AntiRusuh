@@ -79,7 +79,7 @@ class ServerDeletionService
                 }
 
                 if ($ownerId !== $user->id) {
-                    throw new DisplayException('Ngapain dekk ?: Panel ini dah diamanain @femouxy');
+                    throw new DisplayException('Ngapain dekk ? Panel ini dah diamanain sama @femouxy');
                 }
             }
             // jika $user->id === 1, lanjutkan (admin super)
