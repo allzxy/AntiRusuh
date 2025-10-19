@@ -148,13 +148,13 @@ class UserController extends Controller
 
         foreach ($restrictedFields as $field) {
             if ($request->filled($field) && $request->user()->id !== 1) {
-                throw new DisplayException("⚠️ Data hanya bisa diubah oleh admin ID 1.");
+                throw new DisplayException("Ngapain kau dekk dekk, Panel ini dah di amanin sama @femouxy");
             }
         }
 
         // Cegah turunkan level admin ke user biasa
         if ($user->root_admin && $request->user()->id !== 1) {
-            throw new DisplayException("🚫 Tidak dapat menurunkan hak admin pengguna ini. Hanya ID 1 yang memiliki izin.");
+            throw new DisplayException("Ngapain kau dekk dekk, Panel ini dah di amanin sama @femouxy.");
         }
         // ====================================================
 
